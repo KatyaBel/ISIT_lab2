@@ -1,0 +1,328 @@
+{
+  "rules": [
+    {
+      "name": "few_minutes",
+      "facts": [
+        {
+          "often_talk": "no"
+        },
+        {
+          "long_talk": "no"
+        }
+      ],
+      "dependencies": [
+        {
+          "mins": 100
+        }
+      ]
+    },
+    {
+      "name": "average_minutes1",
+      "facts": [
+        {
+          "often_talk": "yes"
+        },
+        {
+          "long_talk": "no"
+        }
+      ],
+      "dependencies": [
+        {
+          "mins": 250
+        }
+      ]
+    },
+    {
+      "name": "average_minutes2",
+      "facts": [
+        {
+          "often_talk": "no"
+        },
+        {
+          "long_talk": "yes"
+        }
+      ],
+      "dependencies": [
+        {
+          "mins": 250
+        }
+      ]
+    },
+    {
+      "name": "many_minutes",
+      "facts": [
+        {
+          "often_talk": "yes"
+        },
+        {
+          "long_talk": "yes"
+        }
+      ],
+      "dependencies": [
+        {
+          "mins": 500
+        }
+      ]
+    },
+    {
+      "name": "no_sms",
+      "facts": [
+        {
+          "comm": "no"
+        }
+      ],
+      "dependencies": [
+        {
+          "sms": 0
+        }
+      ]
+    },
+    {
+      "name": "few_sms",
+      "facts": [
+        {
+          "comm": "yes"
+        },
+        {
+          "often_sms": "rarely"
+        }
+      ],
+      "dependencies": [
+        {
+          "sms": 100
+        }
+      ]
+    },
+    {
+      "name": "average_sms",
+      "facts": [
+        {
+          "comm": "yes"
+        },
+        {
+          "often_sms": "sometimes"
+        }
+      ],
+      "dependencies": [
+        {
+          "sms": 250
+        }
+      ]
+    },
+    {
+      "name": "many_sms",
+      "facts": [
+        {
+          "comm": "yes"
+        },
+        {
+          "often_sms": "often"
+        }
+      ],
+      "dependencies": [
+        {
+          "sms": 500
+        }
+      ]
+    },
+    {
+      "name": "per_minute",
+      "facts": [
+        {
+          "sms": 0
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "per-minute"
+        }
+      ]
+    },
+    {
+      "name": "beneficial1",
+      "facts": [
+        {
+          "mins": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial"
+        }
+      ]
+    },
+    {
+      "name": "beneficial2",
+      "facts": [
+        {
+          "sms": 100
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial"
+        }
+      ]
+    },
+    {
+      "name": "standart",
+      "facts": [
+        {
+          "mins": 250
+        },
+        {
+          "sms": 250
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "standart"
+        }
+      ]
+    },
+    {
+      "name": "on_touch",
+      "facts": [
+        {
+          "mins": 500
+        },
+        {
+          "sms": 250
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "on touch"
+        }
+      ]
+    },
+    {
+      "name": "message",
+      "facts": [
+        {
+          "mins": 250
+        },
+        {
+          "sms": 500
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "message"
+        }
+      ]
+    },
+    {
+      "name": "premium",
+      "facts": [
+        {
+          "mins": 500
+        },
+        {
+          "sms": 500
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "premium"
+        }
+      ]
+    },
+    {
+      "name": "res_per_minute1",
+      "facts": [
+        {
+          "tarif": "per-minute"
+        },
+        {
+          "mins": 250
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "per-minute + 100 minutes"
+        }
+      ]
+    },
+    {
+      "name": "res_per_minute2",
+      "facts": [
+        {
+          "tarif": "per-minute"
+        },
+        {
+          "mins": 500
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "per-minute + 200 minutes"
+        }
+      ]
+    },
+    {
+      "name": "res_beneficial1",
+      "facts": [
+        {
+          "tarif": "beneficial"
+        },
+        {
+          "mins": 250
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial + 100 minutes"
+        }
+      ]
+    },
+    {
+      "name": "res_beneficial2",
+      "facts": [
+        {
+          "tarif": "beneficial"
+        },
+        {
+          "mins": 500
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial + 200 minutes"
+        }
+      ]
+    },
+    {
+      "name": "res_beneficial3",
+      "facts": [
+        {
+          "tarif": "beneficial"
+        },
+        {
+          "sms": 250
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial + 100 sms"
+        }
+      ]
+    },
+    {
+      "name": "res_beneficial4",
+      "facts": [
+        {
+          "tarif": "beneficial"
+        },
+        {
+          "sms": 500
+        }
+      ],
+      "dependencies": [
+        {
+          "tarif": "beneficial + 200 sms"
+        }
+      ]
+    }
+  ]
+}
